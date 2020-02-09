@@ -705,6 +705,7 @@ set(SOURCES
         utilities/ttl/db_ttl_impl.cc
         utilities/write_batch_with_index/write_batch_with_index.cc
         utilities/write_batch_with_index/write_batch_with_index_internal.cc
+        db/db_impl/db_impl_remote_compaction.cc
         $<TARGET_OBJECTS:build_version>)
 
 if(HAVE_SSE42 AND NOT MSVC)
